@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
-import News from "../pages/shared/News/News";
 import Destination from "../pages/Destination/Destination";
 import Blogs from "../pages/Blogs/Blogs";
+import News from "../pages/News/News";
 
 export const router = createBrowserRouter([
     {

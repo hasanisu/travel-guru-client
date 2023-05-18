@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../../logo.png';
-import image from '../../resources/Rectangle 1.png'
-import News from "./News/News";
+
+
 
 const Header = () => {
   return (
-    <div className="navbar flex gap-10 justify-around bg-opacity-75">
+    <div className="navbar flex gap-10 justify-around">
     
 <div className="flex">
   
@@ -20,10 +20,10 @@ const Header = () => {
     <input type="text" placeholder="Search" className="input input-bordered" />
 </div>
 
-<div className="text-white">
+<div className="text-stone-950">
     <Link to="/"  className="btn btn-ghost normal-case text-xl">News</Link >
 </div>
-<div className="text-white">
+<div className="text-stone-950">
     <Link to="/destination"  className="btn btn-ghost normal-case text-xl">Destination</Link >
 </div>
 <div className="text-white">

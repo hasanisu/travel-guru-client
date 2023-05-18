@@ -1,16 +1,17 @@
 import React from 'react';
-import image from '../../../resources/Rectangle 1.png'
-import Header from '../Header';
+import photo from "../../resources/Photos/Rectangle 1.png"
+
+
 
 const News = () => {
     return (
         <div className="relative">
       <img
-        src={image}
-        className="absolute inset-0 object-cover w-full h-screen"
+        src={photo}
+        className="absolute inset-0 object-cover w-full h-screen bg-gradient-to-tl"
         alt=""
       />
-      <div className="relative bg-gray-900 bg-opacity-75 h-screen">
+      <div className="relative bg-gray-900 bg-opacity-60 h-screen">
          {/* Nav bar */}
        
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

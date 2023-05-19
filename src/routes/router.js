@@ -2,9 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Destination from "../pages/Destination/Destination";
 import Blogs from "../pages/Blogs/Blogs";
-import News from "../pages/News/News";
 import Booking from "../pages/Booking/Booking";
 import Home from "../pages/Home/Home";
+import Sajek from "../pages/Visit/Sajek";
+import Srimongol from "../pages/Visit/Srimongol";
+import Sunderban from "../pages/Visit/Sunderban";
+
 
 export const router = createBrowserRouter([
     {
@@ -26,7 +29,19 @@ export const router = createBrowserRouter([
             {
                 path:'/booking',
                 element: <Booking></Booking>
-            }
+            },
+            {
+                path:'/sajek',
+                element:<Sajek></Sajek>
+            },
+            {
+                path:'/srimongol',
+                element:<Srimongol></Srimongol>
+            },
+            {
+                path:'/sunderban',
+                element:<Sunderban></Sunderban>
+            },
             
         ]
     }

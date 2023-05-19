@@ -5,7 +5,7 @@ import logo from "../../logo.png";
 const Header = () => {
   const user = {displayName: 'Hasan'}
   return (
-    <div className=" bg-lime-700">
+    <div className=" bg-slate-400">
       <div className="navbar flex gap-10 justify-around">
         <div className="flex">
           <Link to="/" className="w-20 rounded-full">
@@ -21,8 +21,6 @@ const Header = () => {
               className="input input-bordered"
             />
           </div>
-
-          <div className="text-stone-950"></div>
           <div className="text-stone-950">
             <Link
               to="/destination"

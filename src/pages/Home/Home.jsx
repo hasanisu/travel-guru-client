@@ -1,11 +1,12 @@
-import React from 'react';
-import photo from '../../resources/Photos/Rectangle 1.png';
-import Slider from '../Slider/Slider';
-<Slider></Slider>
+import React from "react";
+import photo from "../../resources/Photos/Rectangle 1.png";
+import Slider from "../Slider/Slider";
+import { Link } from "react-router-dom";
+<Slider></Slider>;
 
 const Home = () => {
-    return (
-        <div className="relative">
+  return (
+    <div className="relative">
       <img
         src={photo}
         className="absolute inset-0 object-cover w-full h-screen bg-gradient-to-tl"
@@ -13,7 +14,6 @@ const Home = () => {
       />
       <div className="relative bg-gray-900 bg-opacity-60 h-screen">
         {/* Nav bar */}
-        
 
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
@@ -28,12 +28,16 @@ const Home = () => {
                 accusantium doloremque laudan, totam rem aperiam, eaque ipsa
                 quae.
               </p>
-              <a
+              <Link to='/booking'
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
               >
-                <button className="btn bg-yellow-300 text-black text-lg">Booking..</button>
+                
+                  <button className="btn bg-yellow-300 text-black text-lg">
+                    Booking..
+                  </button>
+                
                 <svg
                   className="inline-block w-3 ml-2"
                   fill="currentColor"
@@ -41,7 +45,7 @@ const Home = () => {
                 >
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-9/12 place-items-center">
               <Slider className="hello"></Slider>
@@ -50,7 +54,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Home;

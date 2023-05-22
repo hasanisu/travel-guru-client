@@ -7,6 +7,8 @@ import Home from "../pages/Home/Home";
 import Sajek from "../pages/Visit/Sajek";
 import Srimongol from "../pages/Visit/Srimongol";
 import Sunderban from "../pages/Visit/Sunderban";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
 
 
 export const router = createBrowserRouter([
@@ -42,6 +44,14 @@ export const router = createBrowserRouter([
                 path:'/sunderban',
                 element:<Sunderban></Sunderban>
             },
+            {
+                path: '/login',
+                element:<Login></Login>
+            },
+            {
+                path: '/register',
+                element:<Register></Register>
+            }
             
         ]
     }

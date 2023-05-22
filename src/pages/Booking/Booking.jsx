@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import photo from "../../resources/Photos/Rectangle 1.png";
 import Calendar from 'react-calendar';
+import {Link} from 'react-router-dom'
 
 const Booking = () => {
     const [value, setValue] = useState(new Date());
@@ -49,6 +50,10 @@ const Booking = () => {
                           <option>--Select Destination--</option>
                           <option>Dhaka</option>
                           <option>Cox Bazar</option>
+                          <option>Shylet</option>
+                          <option>Rajshahi</option>
+                          <option>Rangamati</option>
+                          <option>Banderban</option>
                           </select>
                           
                           {/* <input
@@ -65,6 +70,10 @@ const Booking = () => {
                           <option>--Select Destination--</option>
                           <option>Dhaka</option>
                           <option>Cox Bazar</option>
+                          <option>Shylet</option>
+                          <option>Rajshahi</option>
+                          <option>Rangamati</option>
+                          <option>Banderban</option>
                           </select>
                           
 
@@ -96,9 +105,11 @@ const Booking = () => {
 
                           {/* Date finsih */}
                         </div>
+                        <Link to=''>
                         <div className="form-control mt-6">
-                          <button className="btn btn-primary">Login</button>
+                          <button className="btn bg-yellow-300 text-black text-lg">Booking</button>
                         </div>
+                        </Link>
                       </div>
                     </div>
                   </div>

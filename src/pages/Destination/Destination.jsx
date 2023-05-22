@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Destination = () => {
-    return (
-        <div>
-            <h3>This is Destination</h3>
-        </div>
-    );
+  return (
+    <div>
+      
+    </div>
+  );
 };
 
 export default Destination;

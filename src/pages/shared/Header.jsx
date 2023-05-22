@@ -45,9 +45,9 @@ const Header = () => {
           user?.uld ?
           /* <img src={''} /> */
           
-          <button className="btn">Logout</button>
+          <Link><button className="btn">Logout</button></Link>
           :
-          <button className="btn bg-yellow-300 text-black text-lg">Login</button>
+          <Link to='/login'><button className="btn bg-yellow-300 text-black text-lg">Login</button></Link>
           
           }
           </div>
